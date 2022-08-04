@@ -71,15 +71,14 @@ def chatbot_response(text):
     res=getResponse(ints,intents)
     return res
 
-st.sidebar.title("NLP bot")
-
+#st.sidebar.title("NLP bot")
+st.image('https://www.pinterest.com/pin/165788830022426295/',width=100)
 st.title("""
 Depato 
 This chatbot is intended for answering the questions of Information Technology Department.You can ask anything about our department.
 """)
 
 st.title("Depato Bot is Ready to Help you!!!")
-
 
 def get_text():
     input_text = st.text_input("You: ")
