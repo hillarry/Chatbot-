@@ -72,13 +72,12 @@ def chatbot_response(text):
     return res
 
 
-
-
-st.sidebar.title("NLP Bot")
 st.title("""
-NLP Bot  
-This is the chatbot for IT Department.
+Depato 
+This chatbot is intended for answering the questions of Information Technology Department.You can ask anything about our department.
 """)
+
+st.title("Depato Bot is Ready to Help you!!!")
 
 def get_text():
     input_text = st.text_input("You: ")
