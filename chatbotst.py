@@ -81,11 +81,11 @@ This is the chatbot for IT Department.
 """)
 
 def get_text():
-    input_text = st.text_input("You: ","Hello, how are you?", key="input")
+    input_text = st.text_area("You: ")
     return input_text 
 user_input = get_text()
 
 #st.text_input("Talk to the bot",key='input_text',on_change=chatbot_response(user_input))
 if user_input:
-    chatbot_response(user_input)
+    st.text_area("Bot:",chatbot_response(user_input))
     
