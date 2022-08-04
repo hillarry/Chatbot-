@@ -72,7 +72,12 @@ def chatbot_response(text):
     return res
 
 #st.sidebar.title("NLP bot")
-st.image('https://pin.it/5Sds82N',width=100)
+
+from PIL import Image
+image = Image.open('chatboticon.jpg')
+
+st.image(image, width=100)
+
 st.title("""
 Depato 
 This chatbot is intended for answering the questions of Information Technology Department.You can ask anything about our department.
