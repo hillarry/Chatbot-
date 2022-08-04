@@ -95,4 +95,4 @@ user_input = get_text()
 if user_input:
     st.text_area("Bot:",chatbot_response(user_input))
 
-st.write("[![Star](<https://img.shields.io/github/stars/><username>/<repo>.svg?logo=github&style=social)](<https://gitHub.com/><username>/<repo>)")
+st.write("[![Star](<https://img.shields.io/github/stars/><hillarry>/<Chatbot->.svg?logo=github&style=social)](<https://gitHub.com/><hillarry>/<Chatbot->)")
