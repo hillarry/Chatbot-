@@ -70,7 +70,7 @@ def chatbot_response(text):
     res=getResponse(ints,intents)
     return res
 
-input_text = st.text_input("You: ")
+
 
 
 st.sidebar.title("NLP Bot")
@@ -79,7 +79,11 @@ NLP Bot
 This is the chatbot for IT Department.
 """)
 
+def get_text():
+    input_text = st.text_input("You: ","Hello, how are you?", key="input")
+    return input_text 
+user_input = get_text()
 
+st.text_input("Talk to the bot",key='input_text',on_change=chatbot_response(user_input))
 
-st.text_area(chatbot_response(input_text))
     
