@@ -87,5 +87,5 @@ user_input = get_text()
 
 #st.text_input("Talk to the bot",key='input_text',on_change=chatbot_response(user_input))
 if user_input:
-    st.text_input("Bot:",chatbot_response(user_input))
+    st.text_area("Bot:",chatbot_response(user_input))
     
