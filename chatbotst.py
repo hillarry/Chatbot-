@@ -72,7 +72,7 @@ def chatbot_response(text):
     return res
 
 #st.sidebar.title("NLP bot")
-st.image('https://www.pinterest.com/pin/165788830022426295/',width=100)
+st.image('https://pin.it/7ypMi0R',width=100)
 st.title("""
 Depato 
 This chatbot is intended for answering the questions of Information Technology Department.You can ask anything about our department.
