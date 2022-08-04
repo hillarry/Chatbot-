@@ -71,6 +71,7 @@ def chatbot_response(text):
     res=getResponse(ints,intents)
     return res
 
+st.sidebar.title("NLP bot")
 
 st.title("""
 Depato 
@@ -79,10 +80,12 @@ This chatbot is intended for answering the questions of Information Technology D
 
 st.title("Depato Bot is Ready to Help you!!!")
 
+
 def get_text():
     input_text = st.text_input("You: ")
     return input_text 
-user_input = get_text()
+if st.sidebar.button('Initialize bot'): 
+    user_input = get_text()
 
 #st.text_input("Talk to the bot",key='input_text',on_change=chatbot_response(user_input))
 if user_input:
