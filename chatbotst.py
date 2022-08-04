@@ -71,7 +71,7 @@ def chatbot_response(text):
     return res
 
 def get_text():
-    input_text = st.text_input("You: ","So, what's in your mind")
+    input_text = st.text_input("You: ")
     return input_text
 
 
@@ -83,6 +83,5 @@ This is the chatbot for IT Department.
 
 user_input = get_text()
 
-if st.button('Initialize'):
-    st.text_area("Bot:",value = chatbot_response(user_input))
+st.text_area("Bot:",chatbot_response(user_input))
     
